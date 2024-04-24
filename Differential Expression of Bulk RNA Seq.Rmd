@@ -8,18 +8,15 @@ output:
 ---
 # Overview
 
-## Lecture 1
 
 -   loading from csv
 -   generating deseq set
 -   transforming the data
 -   library size
 
-## Lecture 2
 
 -   pca, screeplot
 
-## Lecture 3
 
 -   deseq2 contrast "Th0 vs Th2" memory cells
 
@@ -28,7 +25,6 @@ output:
 -   Th0 vs Th2 separately for naive cells / memory cell
 -   compare DEGs for both cell types to find overlap and difference
 
-# LECTURE 1: Loading and preprocessing.
 
 ## Load the libraries
 
@@ -188,7 +184,8 @@ plot(sizeFactors(dds),
     pch = 19)
 ```
 
-# LECTURE 2: Explorative analysis.
+# 
+2: Explorative analysis.
 
 ## Load the libraries
 
@@ -282,7 +279,7 @@ look deeper into the data.
 plotPCA(rltfd, intgroup = 'cytokine_condition')
 ```
 
-# LECTURE 3: Differential Expression.
+# 3: Differential Expression.
 
 ## Load the libraries
 
@@ -296,7 +293,8 @@ library(pheatmap)
 ## DESeq object
 
 We can now use the DESeqDataSetFromMatrix that we have created in
-lecture 1 to create the DESeq object and run the analysis.
+
+1 to create the DESeq object and run the analysis.
 
 ```{r}
 dds <- DESeq(dds)
